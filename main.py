@@ -1,6 +1,7 @@
-#If the bill was $150.00, split between 5 people, with 12% tip. 
-meal_with_tip = (150/5) * 1.12
-#Format the result to 2 decimal places
+print("Welcome to the tip calculator")
+bill = float(input("What was the total bill? "))
+percentage = float(input("What percentage tip would you like to give? 10, 12, or 15? "))
+people = float(input("How many people to split the bill? "))
+meal_with_tip = (bill/people) / 100 * percentage + bill/people
 round(meal_with_tip, 2)
-#Tip: There are 2 ways to round a number.
-print(f"Each Person has to pay: {meal_with_tip}")
+print(f"Each Person should pay: {meal_with_tip}")
